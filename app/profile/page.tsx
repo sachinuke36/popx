@@ -1,3 +1,4 @@
+import { Camera } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 
@@ -7,8 +8,11 @@ const Profile = () => {
      <h1 className='text-xl mb-4'>Account Settings</h1>
      <hr />
      <div className='my-3 flex flex-col md:flex-row gap-5'>
-        <div className='flex items-center gap-3'>
+        <div className='flex w-[100px] items-center gap-3 relative'>
             <Image src={'/my-photo.jpg'} className='rounded-full' alt='photo' width={100} height={100}/>
+            <div className='bg-[#6C25FF] rounded-full absolute right-0 bottom-3'>
+                <Camera color='white' className='p-1'/>
+            </div>
         </div>
         <div>
             <div>
